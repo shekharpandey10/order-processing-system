@@ -1,4 +1,4 @@
-const {eventBus}=require('../services/event')
+const {eventBus}=require('../events/event')
 
 eventBus.on('order:created',(order)=>{
      console.log('[Payment] Payment requested');
