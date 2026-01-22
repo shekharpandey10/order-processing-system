@@ -9,9 +9,9 @@ eventBus.on('payment:success',(order)=>{
             const inStock=Math.random()>0.2
 
             if(inStock){
-                eventBus.emit('inventery:failed',order);
+                eventBus.emit('inventory:failed',order);
                 return;
             }
-            eventBus.emit('inventery:success',order)
+            eventBus.emit('inventory:success',order)
     }, 1000);
 })

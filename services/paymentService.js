@@ -7,7 +7,7 @@ eventBus.on('order:created',(order)=>{
         const sucess=Math.random()>0.3;
 
         if(!sucess){
-            eventBus.emit('payemt:failed',order);
+            eventBus.emit('payment:failed',order);
             return
         }
 
